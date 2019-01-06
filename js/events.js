@@ -6,11 +6,13 @@ function getIt() {
 function frameIt() {
   $(document).on('load', function() {
     $('img').addClass('tasty');
-    $('img').style.cssText('border:1px;border-color:red;')
+    $('img').css({"border-color": "red", 
+                  "border-width":"1px", 
+                  "border-style":"solid"});
   });
 }
 functino submitIt() {
-  
+
 }
 $(document).ready(function(){
   getIt();
