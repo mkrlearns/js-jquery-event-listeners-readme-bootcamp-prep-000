@@ -3,7 +3,12 @@ function getIt() {
     alert('Hey!')
   });
 }
-
+function frameIt() {
+  $('document').on('load', function() {
+    $('img').classList.add('tasty');
+    $('img').style.cssText('border:1px;border-color:red;')
+  });
+}
 $(document).ready(function(){
 
 // call functions here
