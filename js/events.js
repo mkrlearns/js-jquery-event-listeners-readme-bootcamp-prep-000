@@ -5,7 +5,7 @@ function getIt() {
 }
 function frameIt() {
   $('document').on('load', function() {
-    $('img').classList.add('tasty');
+    $('img').addClass('tasty');
     $('img').style.cssText('border:1px;border-color:red;')
   });
 }
