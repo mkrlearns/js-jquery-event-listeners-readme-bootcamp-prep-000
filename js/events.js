@@ -4,7 +4,7 @@ function getIt() {
   });
 }
 function frameIt() {
-  $('document').on('load', function() {
+  $(document).on('load', function() {
     $('img').addClass('tasty');
     $('img').style.cssText('border:1px;border-color:red;')
   });
